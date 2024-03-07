@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyClone</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <aside>
+        <img id="logo" src="img/no-text-logo.png" alt="">
+        <img id="text-logo" src="img/text-logo.png" alt="">
+        
+      <nav>
+        <a href="/">
+          <i class="bi bi-house-fill"></i>
+          <span>Anasayfa</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-search"></i>
+          <span>Arama</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-bookmark-fill"></i>
+          <span>Kütüphanen</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-music-note-list"></i>
+          <span>Çalma Listeleri</span>
+        </a>
+
+        <a href="/">
+          <i class="bi bi-heart-fill"></i>
+          <span>Beğenilen Şarkılar</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <form id="search-form">
+          <input
+            name="searchInput"
+            type="search"
+            placeholder="şarkı ismi giriniz"
+          />
+          <button>
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <ul>
+          <li>Premium</li>
+          <li>Destek</li>
+          <li>İndirmeler</li>
+          <li>Kayıtol</li>
+        </ul>
+
+        <label class="theme-switch">
+          <input
+            id="mode-checkbox"
+            type="checkbox"
+            class="theme-switch__checkbox"
+          />
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container"></div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+    </header>
+      <div class="songs">
+        <h2 id="title">Türkiye'de en popüler</h2>
+
+        <div id="list"></div>
+      </div>
+    </main>
+
+    <div class="play-area">
+      <!-- <div>
+        <img
+          class="animate"
+          src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a7/06/99/a70699f9-2f5a-9198-fe70-6236b534738f/06UMGIM16683.rgb.jpg/400x400cc.jpg"
+        />
+
+        <div>
+          <p>Şuan Oynatılıyor...</p>
+          <h3>Lose Yourself (From "8 Mile")</h3>
+        </div>
+      </div>
+
+      <audio controls src=""></audio> -->
+    </div>
+    <script src="script/main.js" type="module"></script>
+</body>
+
+</html>
